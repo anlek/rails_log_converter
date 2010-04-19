@@ -26,7 +26,7 @@ Echoe.new('rails_lot_converter', version) do |p|
   DESC
   
   p.url = "http://github.com/anlek/rails_log_converter"
-  p.rdoc_pattern = /^(lib|README.rdoc|CHANGELOG.rdoc|LICENSE)/
+  p.rdoc_pattern = /^(lib|README.rdoc|CHANGELOG.rdoc)/
   
   p.development_dependencies = ['rspec >=1.3', 'mocha >=0.9.8', 'yard >=0.5.3']
   p.runtime_dependencies = ['sqlite3-ruby >=1.2.5', 'activerecord >=2.0']
