@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../lib/rails_log_converter'
+
+RailsLogConverter::CLI.execute
