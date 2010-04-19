@@ -4,7 +4,7 @@ describe RailsLogConverter::CLI do
   before(:each) do
     @output = IO.new(0)
     @output.stubs(:puts)
-    @valid_args = ['spec/files/test.log']
+    @valid_args = ['spec/files/simple_log']
   end
   
   it "should run and finish fully" do
