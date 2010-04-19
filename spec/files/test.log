@@ -2,16 +2,16 @@ Processing RegistrantsController#custom_field (for 99.255.99.166 at 2009-11-05 1
   Session ID: 3fd2af2cee13357a31104e3c0a0aa5f3
   Parameters: {"object_name"=>"registration[new_parent_registrant]", "action"=>"custom_field", "product_id"=>"26", "authenticity_token"=>"99ba2d9db0d3e4cc40034bc87341ef65c7cd4e11", "registration_id"=>"cart", "controller"=>"registrants", "show_case_id"=>"2", "show_part_id"=>"5"}
 Rendering registrants/custom_field
-Completed in 0.02558 (39 reqs/sec) | Rendering: 0.00730 (28%) | DB: 0.02078 (81%) | 200 OK [http://tordent.showsignup.com/show_cases/2/show_parts/5/registrations/cart/registrants/custom_field?object_name=registration%5Bnew_parent_registrant%5D&product_id=26&authenticity_token=99ba2d9db0d3e4cc40034bc87341ef65c7cd4e11]
+Completed in 0.02558 (39 reqs/sec) | Rendering: 0.00730 (28%) | DB: 0.02078 (81%) | 200 OK [http://www.example.com/show_cases/2/show_parts/5/registrations/cart/registrants/custom_field?object_name=registration%5Bnew_parent_registrant%5D&product_id=26&authenticity_token=99ba2d9db0d3e4cc40034bc87341ef65c7cd4e11]
 
 
 Processing RegistrationsController#create (for 99.255.99.166 at 2009-11-05 18:32:14) [POST]
   Session ID: 3fd2af2cee13357a31104e3c0a0aa5f3
-  Parameters: {"registration"=>{"new_parent_registrant"=>{"city"=>"Picton ", "address1"=>"389 Main Street East ", "company"=>"", "postal_code"=>"K0K 2T0", "address2"=>"Suite 1", "salutation"=>"Dr.", "country"=>"CA", "temp_id"=>"", "telephone1"=>"613-476-6750", "registration_product_id"=>"26", "registrant_product_custom_fields"=>[{"value_entered"=>"wwcc", "custom_field_id"=>"1", "registrant_product_id"=>""}], "fax"=>"613-476-3404", "telephone2"=>"", "first_name"=>"Kuldeep ", "province"=>"ON", "last_name"=>"Sandhu", "email"=>"kuldeepsandhu@hotmail.com"}}, "action"=>"create", "authenticity_token"=>"99ba2d9db0d3e4cc40034bc87341ef65c7cd4e11", "controller"=>"registrations", "show_case_id"=>"2", "show_part_id"=>"5"}
+  Parameters: {"registration"=>{"new_parent_registrant"=>{"name"=> "bob","city"=>"guelph"}}, "action"=>"create", "authenticity_token"=>"99ba2d9db0d3e4cc40034bc87341ef65c7cd4e11", "controller"=>"registrations", "show_case_id"=>"2", "show_part_id"=>"5"}
 Warning: SQLServer :lock option 'nil' not supported
 Warning: SQLServer :lock option 'nil' not supported
-Redirected to http://tordent.showsignup.com/show_cases/2/show_parts/5/cart/registrant
-Completed in 0.04851 (20 reqs/sec) | DB: 0.03705 (76%) | 302 Found [http://tordent.showsignup.com/show_cases/2/show_parts/5/registrations]
+Redirected to http://www.example.com/show_cases/2/show_parts/5/cart/registrant
+Completed in 0.04851 (20 reqs/sec) | DB: 0.03705 (76%) | 302 Found [http://www.example.com/show_cases/2/show_parts/5/registrations]
 
 
 Processing CartController#registrant (for 99.255.99.166 at 2009-11-05 18:32:14) [GET]
@@ -19,7 +19,7 @@ Processing CartController#registrant (for 99.255.99.166 at 2009-11-05 18:32:14) 
   Parameters: {"action"=>"registrant", "controller"=>"cart", "show_case_id"=>"2", "show_part_id"=>"5"}
 Rendering template within layouts/application
 Rendering cart/registrant
-Completed in 0.01782 (56 reqs/sec) | Rendering: 0.00569 (31%) | DB: 0.01574 (88%) | 200 OK [http://tordent.showsignup.com/show_cases/2/show_parts/5/cart/registrant]
+Completed in 0.01782 (56 reqs/sec) | Rendering: 0.00569 (31%) | DB: 0.01574 (88%) | 200 OK [http://www.example.com/show_cases/2/show_parts/5/cart/registrant]
 
 
 Processing RegistrantsController#new (for 99.255.99.166 at 2009-11-05 18:32:15) [GET]
@@ -28,28 +28,28 @@ Processing RegistrantsController#new (for 99.255.99.166 at 2009-11-05 18:32:15) 
 Warning: SQLServer :lock option 'nil' not supported
 Rendering template within layouts/application
 Rendering registrants/new
-Completed in 0.15696 (6 reqs/sec) | Rendering: 0.02061 (13%) | DB: 0.12800 (81%) | 200 OK [http://tordent.showsignup.com/show_cases/2/show_parts/5/registrations/cart/registrants/new]
+Completed in 0.15696 (6 reqs/sec) | Rendering: 0.02061 (13%) | DB: 0.12800 (81%) | 200 OK [http://www.example.com/show_cases/2/show_parts/5/registrations/cart/registrants/new]
 
 
 Processing SessionController#destroy (for 76.10.176.141 at 2009-11-06 15:39:45) [GET]
   Session ID: 1c9cbf429723b005fcdb4cb428747750
   Parameters: {"action"=>"destroy", "controller"=>"session"}
 Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
-Redirected to http://tordent.showsignup.com/show_cases/2/show_parts/5/registrations
-Completed in 0.01725 (57 reqs/sec) | DB: 0.01598 (92%) | 302 Found [http://tordent.showsignup.com/logout]
+Redirected to http://www.example.com/show_cases/2/show_parts/5/registrations
+Completed in 0.01725 (57 reqs/sec) | DB: 0.01598 (92%) | 302 Found [http://www.example.com/logout]
 
 
 Processing RegistrationsController#index (for 76.10.176.141 at 2009-11-06 15:39:45) [GET]
   Session ID: a7bf4c8b8ee0431f1643e76fcaf04258
   Parameters: {"action"=>"index", "controller"=>"registrations", "show_case_id"=>"2", "show_part_id"=>"5"}
-Redirected to http://tordent.showsignup.com/show_cases/2/show_parts/5
+Redirected to http://www.example.com/show_cases/2/show_parts/5
 Rendering template within layouts/application
 
 
 Processing RegistrationsController#create (for 70.27.106.232 at 2009-11-06 15:41:06) [POST]
   Session ID: 984b31d1c0f6104e186fb4eea5826a36
-  Parameters: {"registration"=>{"new_parent_registrant"=>{"city"=>"Toronto", "address1"=>"447-131 Bloor Street West", "company"=>"Colonnade Dental Centre", "postal_code"=>"M5S1R1", "address2"=>"", "salutation"=>"Dr.", "country"=>"CA", "temp_id"=>"", "telephone1"=>"416-925-8282", "registration_product_id"=>"26", "registrant_product_custom_fields"=>[{"value_entered"=>"0605467", "custom_field_id"=>"1", "registrant_product_id"=>""}], "fax"=>"416-925-3571", "telephone2"=>"", "first_name"=>"christena", "province"=>"ON", "last_name"=>"chruszez", "email"=>"cchruszez@hotmail.com"}}, "action"=>"create", "authenticity_token"=>"3775abd6de916dd6d62e8ce6333e1f94a1615360", "controller"=>"registrations", "show_case_id"=>"2", "show_part_id"=>"5"}
+  Parameters: {"registration"=>{"new_parent_registrant"=>{"city"=>"Toronto", "name" => "sam"}}, "action"=>"create", "authenticity_token"=>"3775abd6de916dd6d62e8ce6333e1f94a1615360", "controller"=>"registrations", "show_case_id"=>"2", "show_part_id"=>"5"}
 Warning: SQLServer :lock option 'nil' not supported
 Warning: SQLServer :lock option 'nil' not supported
-Redirected to http://tordent.showsignup.com/show_cases/2/show_parts/5/cart/registrant
-Completed in 0.04703 (21 reqs/sec) | DB: 0.03621 (76%) | 302 Found [http://tordent.showsignup.com/show_cases/2/show_parts/5/registrations]
+Redirected to http://www.example.com/show_cases/2/show_parts/5/cart/registrant
+Completed in 0.04703 (21 reqs/sec) | DB: 0.03621 (76%) | 302 Found [http://www.example.com/show_cases/2/show_parts/5/registrations]
