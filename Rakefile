@@ -1,6 +1,6 @@
 require 'rake'
 require 'spec/rake/spectask'
-require "./lib/mongify/version"
+require "./lib/rails_log_converter/version"
 
 begin
   require 'echoe'
