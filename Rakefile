@@ -22,7 +22,7 @@ Echoe.new('rails_lot_converter', version) do |p|
   p.ignore_pattern = ["tmp/*", "script/*", "Examples/*"]
   
   p.summary = <<-DESC.strip.gsub(/\n\s+/, " ")
-    Convert your rails log files into a SQLite database.
+    A little app that parses through your rails log file and converts it into a SQLite database.
   DESC
   
   p.url = "http://github.com/anlek/rails_log_converter"
