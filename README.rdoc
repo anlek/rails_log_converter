@@ -15,7 +15,8 @@ A little app that will parse through a Rails log file and create an SQLite .db f
 == Todos
 
   Need to add specs
-  Need to test data from a development log  
+  Need to test data from a development log
+  Add ability to specify output  
   
 == License
 
