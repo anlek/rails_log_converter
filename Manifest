@@ -1,4 +1,5 @@
 CHANGELOG.rdoc
+Manifest
 README.rdoc
 Rakefile
 bin/rails_log_converter
@@ -13,7 +14,8 @@ lib/rails_log_converter/entry.rb
 lib/rails_log_converter/parser.rb
 lib/rails_log_converter/ui.rb
 lib/rails_log_converter/version.rb
+rails_lot_converter.gemspec
+spec/files/simple_log
 spec/rails_log_converter/cli_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
-Manifest
