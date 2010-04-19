@@ -7,13 +7,14 @@ begin
 rescue LoadError
   abort "You'll need to have `echoe' installed to use Echo's Rakefile"
 end
+
  
 version = RailsLogConverter::Version::STRING.dup
 if ENV['SNAPSHOT'].to_i == 1
   version << "." << Time.now.utc.strftime("%Y%m%d%H%M%S")
 end
 
-Echoe.new('rails_lot_converter', version) do |p|
+Echoe.new('rails_log_converter', version) do |p|
   p.changelog            = 'CHANGELOG.rdoc'
   
   p.author                = 'Andrew Kalek'
