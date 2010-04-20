@@ -14,7 +14,7 @@ lib/rails_log_converter/entry.rb
 lib/rails_log_converter/parser.rb
 lib/rails_log_converter/ui.rb
 lib/rails_log_converter/version.rb
-rails_lot_converter.gemspec
+rails_log_converter.gemspec
 spec/files/simple_log
 spec/rails_log_converter/cli_spec.rb
 spec/spec.opts
